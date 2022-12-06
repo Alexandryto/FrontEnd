@@ -1,5 +1,9 @@
-div.Cabecera{
+div{
     background-color: black;
+}
+
+#banner{
+    width: 100%;
 }
 
 #facebook{
@@ -8,12 +12,14 @@ div.Cabecera{
     margin-left: 2px;
     margin-top: 3%;
 }
+
 #github{
     float: right;
     margin-right: 2px;
     margin-left: 2px;
     margin-top: 3%;
 }
+
 #linkedin{
     float: right;
     margin-right: 2px;
