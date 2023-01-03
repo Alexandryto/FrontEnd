@@ -1,8 +1,23 @@
 .row{
     color: white;
     background-color: black;
+    padding: 20px;
 }
 
 #titulo{
     text-align: center;
+}
+#subtitulo{
+    padding-left: 5px;
+}
+
+#videoProyecto{
+    cursor: pointer;
+    width: 80%;
+    display: inline;
+}
+#codigo{
+    cursor: pointer;
+    width: 80%;
+    display: inline;
 }

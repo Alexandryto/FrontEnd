@@ -24,3 +24,10 @@ div{
     left: 5%;
     }
 }
+
+#Perfil::after{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    }
