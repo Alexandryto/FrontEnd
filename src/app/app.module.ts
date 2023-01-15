@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,6 +15,12 @@ import { HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { interceptorProvider } from './service/interceptor.service';
+import { HomeComponent } from './components/home/home.component';
+import { NewExperienciaComponent } from './components/experiencias/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencias/edit-experiencia.component';
+import { NewSkillComponent } from './components/habilidades/new-skill.component';
+import { EditSkillComponent } from './components/habilidades/edit-skill.component';
 
 
 @NgModule({
@@ -31,9 +36,18 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
         LoginComponent,
         NeweducacionComponent,
         EditeducacionComponent,
+        HomeComponent,
+        NewExperienciaComponent,
+        EditExperienciaComponent,
+        NewSkillComponent,
+        EditSkillComponent,
+        
+        
         
     ],
-    providers: [],
+    providers: [
+        interceptorProvider
+    ],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,

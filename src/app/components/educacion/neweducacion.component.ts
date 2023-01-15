@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { Educacion } from 'src/app/model/educacion';
-import { EducacionService } from 'src/app/service/educacion.service';
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { Educacion } from "src/app/model/educacion";
+import { EducacionService } from "src/app/service/educacion.service";
 
 @Component({
   selector: 'app-neweducacion',
@@ -12,14 +12,14 @@ export class NeweducacionComponent implements OnInit {
   nombreE: string;
   descripcionE: string;
 
-  constructor(private educacionS: EducacionService, private router: Router) { }
+  constructor(private eduacionS: EducacionService, private router: Router){}
 
   ngOnInit(): void {
   }
-
+  
   onCreate(): void{
     const educacion = new Educacion(this.nombreE, this.descripcionE);
-    this.educacionS.save(educacion).subscribe(
+    this.eduacionS.save(educacion).subscribe(
       data =>{
         alert("Educacion añadida correctamente");
         this.router.navigate(['']);
@@ -29,5 +29,5 @@ export class NeweducacionComponent implements OnInit {
       }
     )
   }
-
+  
 }

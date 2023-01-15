@@ -1,41 +1,43 @@
-div{
+.row{
     background-color: black;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    margin-right: 0.5em;
+}
 
+#ArgPgm{
+    width: 150px;
+}
 #banner{
     width: 100%;
 }
 
-#facebook{
-    float: right;
-    margin-top: 3%;
-    margin-right: 2px;
-    margin-left: 2px;
+img{
+    width: 50px;
+}
+.btn{
+    border-width: medium;
 }
 
-#github{
-    float: right;
-    margin-right: 2px;
-    margin-left: 2px;
-    margin-top: 3%;
-}
+/*--- Para la vista de celular ---*/
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes img{
+        margin: 0.2em;
+    }
 
-#linkedin{
-    float: right;
-    margin-right: 2px;
-    margin-left: 2px;
-    margin-top: 3%;
-}
+    
 
-#mail{
-    float: right;
-    margin-right: 2px;
-    margin-left: 2px;
-    margin-top: 3%;
-}
-#login{
-    float: right;
-    margin-right: 2px;
-    margin-left: 10px;
-    margin-top: 3%;
 }
